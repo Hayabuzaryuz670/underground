@@ -1,0 +1,95 @@
+/** Color Verde #00A50A **/ 
+/** color gris #373130 **/
+:root {
+	--primarioOscuro: #252222;
+	--secundario: #00A50A;
+}
+html {
+	box-sizing: border-box;
+}
+*, *:before, *after {
+	box-sizing: inherit;
+}
+h1, h2, h3, h4 {
+	font-family: 'Righteous', cursive;
+	color: white;
+}
+body {
+	background-color: black;
+}
+p {
+	font-family: 'Lato', sans-serif;
+	color: white;
+}
+a {
+	font-family: 'Righteous', cursive;
+	color: white;
+}
+img {
+	max-width: 100%
+}
+.verde {
+	color: #00A50A;
+}
+.contenedor {
+	max-width: 1000px;
+	width: 95%;
+	margin: 0 auto;
+}
+.header {
+	display: grid;
+	padding: 0.2rem 6;
+}
+.barra {
+	background-color: var(--primarioOscuro);
+	padding: 1rem 0;
+}
+.barra .nav {
+	display: grid;
+	grid-template-columns: repeat(5, 200px);
+	justify-content: center;
+}
+.barra .nav a {
+	font-size: 1rem;
+	text-align: center;
+	text-decoration: none;
+}
+.barra .nav a:hover,
+a:hover {
+	color: var(--secundario);
+}
+.lista-productos {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 2rem;
+}
+@media (min-width: 768px) {
+	.lista-productos {
+		grid-template-columns: repeat(3, 1fr);
+		padding: 3rem 0;
+	}
+}
+.producto {
+	background-color: var(--primarioOscuro);
+	padding: 0.8rem;
+}
+.producto a {
+	text-decoration: none;
+}
+@media (min-width: 768px) {
+	.contenedor-informacion {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 2rem; 
+	}	
+}
+.footer {
+	background-color: var(--primarioOscuro);
+	padding: 1rem 0;
+	margin-top: 2rem;
+}
+.copyright {
+	font-size: 0.8rem;
+	text-align: center;
+
+}
